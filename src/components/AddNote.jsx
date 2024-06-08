@@ -7,6 +7,12 @@ const AddNote = ({ getNotes }) => {
   //   add new note
   const addNote = async (e) => {
     e.preventDefault()
+
+    if (note.trim().length === 0) {
+      alert("Please enter a valid note.")
+      return
+    }
+
     try {
       await fetch(
         "https://fir-note-app-74989-default-rtdb.firebaseio.com/notes.json",
