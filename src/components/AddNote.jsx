@@ -28,10 +28,10 @@ const AddNote = ({ getNotes }) => {
         <input
           type="text"
           placeholder="add note"
-          className="p-2 w-[60%] text-lg border-none outline-none rounded-xl max-w-[500px] min-w-[100px] mr-4"
+          className="p-1.5 w-[60%] text-lg border-none outline-none rounded-xl max-w-[500px] min-w-[100px] mr-4"
           onChange={(e) => setNote(e.target.value)}
         />
-        <button className="p-2 text-blue-400 border-none text-lg font-semibold rounded-xl cursor-pointer min-w-[96px]">
+        <button className="p-1.5 text-blue-400 border-none text-lg font-semibold rounded-xl cursor-pointer min-w-[101px]">
           Add Note
         </button>
       </form>
