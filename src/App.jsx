@@ -66,7 +66,7 @@ function App() {
           </div>
         </>
       )}
-      {notes.length === 0 && <Intro />}
+      {!loading && notes.length === 0 && <Intro />}
     </>
   )
 }
